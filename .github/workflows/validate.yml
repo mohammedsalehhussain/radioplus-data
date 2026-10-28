@@ -1,0 +1,32 @@
+# يتحقق من ملف القائمة مع كل تعديل. إن فشل (❌) فلا تُبقِ التعديل: الملف المعطوب يرفضه التطبيق،
+# لكن الأفضل إصلاحه هنا. تفاصيل الخطأ بالعربية في صفحة التشغيل.
+name: التحقق من قائمة القنوات
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: النسخة السابقة للمقارنة
+        run: |
+          base="${{ github.event.pull_request.base.sha || github.event.before }}"
+          if [ -n "$base" ] && git cat-file -e "$base" 2>/dev/null; then
+            git show "$base:official_tv_channels.json" > previous.json 2>/dev/null || true
+          elif git rev-parse HEAD~1 >/dev/null 2>&1; then
+            git show HEAD~1:official_tv_channels.json > previous.json 2>/dev/null || true
+          fi
+      - name: التحقق
+        run: python3 validate.py --previous previous.json
