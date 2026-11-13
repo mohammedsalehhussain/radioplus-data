@@ -38,3 +38,10 @@
 
 ## أمان
 من يملك صلاحية التعديل هنا يتحكم بما يُعرض في التطبيق. فعّل **التحقق بخطوتين** في حساب GitHub، ولا تمنح صلاحية الكتابة لأحد غير موثوق.
+
+## سياسة الخصوصية
+`privacy-policy.html` منشورة عبر GitHub Pages على الرابط:
+https://mohammedsalehhussain.github.io/radioplus-data/privacy-policy.html
+
+هذا الرابط يوضع في Play Console (محتوى التطبيق ← سياسة الخصوصية). النسخة الأصلية في مستودع التطبيق
+`docs/play-store/privacy-policy.html`؛ عند تعديلها انسخها إلى هنا أيضًا.
