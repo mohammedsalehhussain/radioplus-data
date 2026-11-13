@@ -1,6 +1,6 @@
 {
- "version": 2,
- "updated": "2026-10-22",
+ "version": 3,
+ "updated": "2026-11-13",
  "updateUrl": "https://raw.githubusercontent.com/mohammedsalehhussain/radioplus-data/main/official_tv_channels.json",
  "note": "قائمة مُراجعة: قنوات مجانية تعمل داخل التطبيق مباشرة، روابطها من خوادم القنوات أو شبكات توزيعها، دون قنوات مدفوعة أو روابط تتطلب Referer أو رموزًا مؤقتة. فُحصت كل الروابط في 2026-10-22. القنوات ذات youtubeChannelId تُعرض بمشغّل يوتيوب الرسمي المضمّن (حسابات موثّقة، والتضمين مسموح؛ فُحصت في 2026-10-22).",
  "channels": [
@@ -1242,20 +1242,6 @@
    ]
   },
   {
-   "id": "CGTNArabic.cn",
-   "name": "CGTN العربية",
-   "nameEn": "CGTN Arabic",
-   "country": "UN",
-   "categories": [
-    "news"
-   ],
-   "homepage": "https://arabic.cgtn.com/",
-   "logo": "https://i.imgur.com/AkFFrS7.png",
-   "streams": [
-    "https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8"
-   ]
-  },
-  {
    "id": "DW.de",
    "name": "DW عربية",
    "nameEn": "DW",
@@ -1328,20 +1314,6 @@
    "logo": "https://i.imgur.com/dEfI2M9.png",
    "streams": [
     "https://tv-trtarabi.medya.trt.com.tr/master.m3u8"
-   ]
-  },
-  {
-   "id": "ElHeddafTV.dz",
-   "name": "الهداف",
-   "nameEn": "El-Heddaf TV",
-   "country": "DZ",
-   "categories": [
-    "sports"
-   ],
-   "homepage": "https://www.elheddaf.com/",
-   "logo": "https://i.imgur.com/cDkIDIA.png",
-   "streams": [
-    "https://live.elheddaftv.com:8081/elheddaftv/index.m3u8"
    ]
   },
   {
@@ -1820,20 +1792,6 @@
    "logo": "https://i.imgur.com/4WKQppG.png",
    "streams": [
     "https://svs.itworkscdn.net/alimanlive/imantv.smil/playlist.m3u8"
-   ]
-  },
-  {
-   "id": "AlIttihadTV.lb",
-   "name": "الاتحاد",
-   "nameEn": "Al Ittihad TV",
-   "country": "LB",
-   "categories": [
-    "general"
-   ],
-   "homepage": "http://www.alittihad.tv/",
-   "logo": "https://i.imgur.com/QMUjPXx.png",
-   "streams": [
-    "https://live.alittihad.tv:444/ittihad/index.m3u8"
    ]
   },
   {
